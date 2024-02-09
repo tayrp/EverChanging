@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "io.github.magicquartz.everchanging.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ConnectScreenMixin",
+		"AddMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
