@@ -3,15 +3,15 @@
 	"id": "everchanging",
 	"version": "${version}",
 	"name": "Ever Changing",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Client-side mod for joining the constantly changing Ngrok tunnels via a GitHub Gist powered by (Engrok - Server side mod)",
 	"authors": [
-		"Me!"
+		"MagicQuartz"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/MagicQuartz/EverChanging"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/everchanging/icon.png",
 	"environment": "*",
 	"entrypoints": {

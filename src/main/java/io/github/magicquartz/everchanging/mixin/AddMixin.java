@@ -17,9 +17,7 @@ public abstract class AddMixin {
 		// Modify the address parameter as needed
 		if (address.startsWith("gist://")) {
 			String gistLink = address.substring(7);
-			EverChanging.LOGGER.info(gistLink);
 			String serverIp = fetchServerIpFromGist(gistLink);
-			EverChanging.LOGGER.info("Fetched IP -> " + serverIp);
 			return serverIp;
 		} else {
 			return address; // If the address doesn't start with "gist://", return it unchanged

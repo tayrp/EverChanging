@@ -60,7 +60,6 @@ public class GistServerConnector implements ClientModInitializer {
         else
             apiUrl = gistStr;
 
-        EverChanging.LOGGER.info("apiUrl » " + apiUrl);
         URL url = new URL(apiUrl);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");
@@ -82,7 +81,6 @@ public class GistServerConnector implements ClientModInitializer {
 
     private static String fetchGistContentDirect(String gistUrl) throws IOException
     {
-        EverChanging.LOGGER.info("Received fetchDirectContent");
         String[] cells = gistUrl.split("/");
 
         return fetchGistContentApi(cells[4], true);
@@ -94,8 +92,6 @@ public class GistServerConnector implements ClientModInitializer {
 
         String fileName = files.keySet().iterator().next(); // Get the first file name
         JsonObject file = files.getAsJsonObject(fileName);
-
-        EverChanging.LOGGER.info(file.get("content").getAsString());
 
         return file.get("content").getAsString();
     }
